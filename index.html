@@ -116,7 +116,7 @@
 
 
       } else {
-        // Desktop: 画面に合わせて広げ、リサイズにも追従（内部解像度は DPR 込み）
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         fitDesktopCanvas(canvas);
         window.addEventListener("resize", function(){ fitDesktopCanvas(canvas); });
       }
